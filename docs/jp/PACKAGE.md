@@ -1,7 +1,11 @@
-## Notes on package list
+## パッケージリストについて
 
-Some packages are added automatically and do not need to be written. The following is a list.
+一部のパッケージはスクリプトによって自動でインストールされます。以下はそのパッケージのリストです。  
+以下のパッケージはパッケージリストに追加する必要はありません。
 
+- bash
+- base
+- base-devel
 - haveged
 - intel-ucode
 - amd-ucode
@@ -9,10 +13,10 @@ Some packages are added automatically and do not need to be written. The followi
 - nbd
 - efitools
 
-The following packages are installed depending on the situation, and should not be added.
+以下のパッケージはビルドオプションや依存関係によってスクリプトが判断してインストールします。  
+以下のパッケージは絶対にパッケージリストに記述しないでください。
 
-- plymouth theme package specified in config
-- plymouth
+- plymouthやその設定ファイルやテーマファイル
 - linux kernel
 - linux headers
 - broadcom-wl
